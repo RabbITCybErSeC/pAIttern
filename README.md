@@ -1,0 +1,2 @@
+# pAIttern
+My-AI-Patternt
