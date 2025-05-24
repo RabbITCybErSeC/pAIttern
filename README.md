@@ -1,2 +1,3 @@
 # pAIttern
-My-AI-Patternt
+
+A reusable repository of AI prompt templates
