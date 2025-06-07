@@ -1,61 +1,67 @@
-# Competitive Analysis for {{COMPANY}}
+You are a top-tier strategy consultant with deep expertise in competitive analysis, growth loops, pricing strategy, and unit economics–driven product strategy. If specific information is unavailable, clearly state that.
 
-## Current Focus
-{{COMPANY}} operates in the {{INDUSTRY}} industry, focusing on [insert one-paragraph description of what the company currently does, including key revenue streams, pricing model, target customer segments, and any known growth strategies or tactics in use]. 
+## Context:
+- **Business Name:** {{COMPANY}}  
+- **Industry:** {{INDUSTRY}}
 
-## Known Challenges
-- [Challenge 1, e.g., declining user growth]
-- [Challenge 2, e.g., increasing customer acquisition cost (CAC)]
-- [Challenge 3, e.g., market saturation]
-- [Challenge 4, e.g., regulatory risk]
+### Current Focus:
+Provide a one-paragraph description of what the company currently does. Include key revenue streams, pricing model, target customer segments, and any known growth strategies or tactics in use.
 
-## Competitive Landscape
-- **Competitor 1: [Name]**
-  - **Positioning**: [Describe their market positioning, e.g., premium provider, low-cost leader]
-  - **Pricing Model**: [e.g., Subscription-based, freemium, one-time purchase]
-  - **Recent Strategic Moves**: [e.g., Launched new product, expanded to new market]
-- **Competitor 2: [Name]**
-  - **Positioning**: [Describe their market positioning]
-  - **Pricing Model**: [e.g., Tiered pricing, pay-per-use]
-  - **Recent Strategic Moves**: [e.g., Acquired a smaller competitor, partnered with a tech firm]
-- **Competitor 3: [Name]**
-  - **Positioning**: [Describe their market positioning]
-  - **Pricing Model**: [e.g., Freemium with premium upgrades]
-  - **Recent Strategic Moves**: [e.g., Invested in AI technology, rebranded]
-- **Competitor 4: [Name] (Optional)**
-  - **Positioning**: [Describe their market positioning]
-  - **Pricing Model**: [e.g., Annual contracts]
-  - **Recent Strategic Moves**: [e.g., Expanded globally]
-- **Competitor 5: [Name] (Optional)**
-  - **Positioning**: [Describe their market positioning]
-  - **Pricing Model**: [e.g., Usage-based pricing]
-  - **Recent Strategic Moves**: [e.g., New marketing campaign]
-- **Adjacent-Market Disruptor 1: [Name]**
-  - **Positioning**: [Describe their positioning in an adjacent market]
-  - **Pricing Model**: [e.g., Subscription with add-ons]
-  - **Recent Strategic Moves**: [e.g., Entered {{INDUSTRY}} with a new offering]
-- **Adjacent-Market Disruptor 2: [Name]**
-  - **Positioning**: [Describe their positioning in an adjacent market]
-  - **Pricing Model**: [e.g., Flat-rate pricing]
-  - **Recent Strategic Moves**: [e.g., Developed a competing technology]
+### Known Challenges:
+List the main strategic or operational obstacles the company is currently facing (e.g., declining user growth, increasing CAC, market saturation, regulatory risk).
 
-## Opportunity Gaps
-1. **[Lever 1]**: [Explain the untapped opportunity, e.g., {{COMPANY}} has not yet implemented a referral program, while competitors see high growth from viral loops.]
-2. **[Lever 2]**: [Explain the untapped opportunity, e.g., {{COMPANY}} could adopt AI-driven personalization, which Competitor X uses to reduce churn.]
-3. **[Lever 3]**: [Explain the untapped opportunity, e.g., {{COMPANY}} has not explored adjacent markets, unlike Disruptor Y.]
-4. **[Lever 4]**: [Explain the untapped opportunity, e.g., {{COMPANY}}’s pricing model lacks a freemium tier, limiting user acquisition.]
-5. **[Lever 5]**: [Explain the untapped opportunity, e.g., {{COMPANY}} could leverage partnerships, as Competitor Z has done to expand reach.]
+---
 
-## Prioritized Actions
-| Action | Impact (1–5) | Feasibility (1–5) | Rationale | First Step |
-|--------|--------------|-------------------|-----------|------------|
-| [Action 1, e.g., Implement a referral program] | [Score] | [Score] | [Explain why this is high-impact and feasible, e.g., Drives viral growth with low resource investment.] | [Specific first step, e.g., Design referral incentives.] |
-| [Action 2, e.g., Introduce freemium tier] | [Score] | [Score] | [Explain why this is high-impact and feasible, e.g., Increases user acquisition with minimal tech changes.] | [Specific first step, e.g., Analyze competitor freemium models.] |
-| [Action 3, e.g., Partner with adjacent industry player] | [Score] | [Score] | [Explain why this is high-impact and feasible, e.g., Expands market reach with existing resources.] | [Specific first step, e.g., Identify potential partners.] |
+## Tasks:
 
-## Sources
-1. [URL or publication title, e.g., {{COMPANY}} website]
-2. [URL or publication title, e.g., Competitor 1 press release]
-3. [URL or publication title, e.g., Industry report from Statista]
-4. [URL or publication title, e.g., Social media analysis via Brand24]
-5. [URL or publication title, e.g., Job listings on LinkedIn]
+### 1. Map the Competitive Landscape
+- Identify **3–5 direct competitors** and **1–2 adjacent-market disruptors**.
+- For each, summarize:
+  - **Positioning**
+  - **Pricing model**
+  - **Notable recent strategic moves**
+
+### 2. Spot Opportunity Gaps
+- Compare {{COMPANY}}’s current strategies and tactics with those of its competitors.
+- Identify and describe **at least five high-impact growth or profitability levers** that {{COMPANY}} has not yet exploited.
+
+### 3. Prioritize Actions
+- For each opportunity lever, score:
+  - **Impact** (on revenue or margin): *1–5*
+  - **Feasibility** (ease/speed of implementation, resource intensity): *1–5*
+- Recommend the **top 3 actions** based on highest combined *Impact × Feasibility*.
+- Include rationale and suggest a **clear first step** for each.
+
+---
+
+## Approach:
+Go exceptionally deep in your research. Assume it is worth reviewing up to **200 webpages or sources** due to the potential impact.  
+Use a broad range of data: company websites, product pages, job listings, press releases, analytics tools, social media, forums, and public databases — *anything relevant is fair game*.
+
+---
+
+## Output Format:
+
+### Competitive Landscape:
+- Bullet list of competitors and their key data
+
+### Opportunity Gaps:
+1. Untapped lever 1 — short explanation  
+2. Untapped lever 2 — short explanation  
+3. Untapped lever 3 — short explanation  
+4. Untapped lever 4 — short explanation  
+5. Untapped lever 5 — short explanation
+
+### Prioritized Actions:
+
+| Opportunity Lever | Impact (1–5) | Feasibility (1–5) | Rationale | First Step |
+|-------------------|---------------|--------------------|-----------|-------------|
+| Example Lever 1   | 5             | 4                  | [Brief explanation] | [Tactical next step] |
+| Example Lever 2   | 4             | 5                  | [Brief explanation] | [Tactical next step] |
+| Example Lever 3   | 5             | 3                  | [Brief explanation] | [Tactical next step] |
+
+### Sources:
+1. [URL or publication/tool name]
+2. [URL or publication/tool name]
+3. [URL or publication/tool name]
+...
