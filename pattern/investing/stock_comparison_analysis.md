@@ -100,6 +100,12 @@ List comparable companies based on industry, size, and business model.
 
 ---
 
+## Approach:
+
+Go exceptionally deep in your research and assesment. Assume it is worth reviewing up to 200 (financial) webpages or sources due to the potential impact.
+Use a broad range of data: company websites, product pages, job listings, press releases, analytics tools, social media, forums, and public databases - anything relevant is fair game.
+
+
 ## ✅ Final Recommendation Table
 
 | Stock | Valuation Rating | Quality Score | Recent Trend | Mgmt Assessment | Investment View |
@@ -110,6 +116,7 @@ List comparable companies based on industry, size, and business model.
 | D     |                  |               |               |                  |                 |
 
 ---
+
 
 ## 🔧 Optional Add-ons (if relevant)
 

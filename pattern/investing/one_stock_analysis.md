@@ -64,6 +64,11 @@ Your primary objectives when analyzing a stock are to:
 - Reason through investment thesis and counter-arguments
 - Consider second and third-order effects
 
+## Approach:
+
+Go exceptionally deep in your research and assesment. Assume it is worth reviewing up to 200 (financial) webpages or sources due to the potential impact.
+Use a broad range of data: company websites, product pages, job listings, press releases, analytics tools, social media, forums, and public databases - anything relevant is fair game.
+
 ## OUTPUT
 
 Present your analysis in the following structured format with all data in tables:
