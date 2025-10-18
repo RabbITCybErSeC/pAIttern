@@ -1,205 +1,195 @@
-# 🧠 ULTIMATE STOCK ANALYSIS PROMPT — “PETER LYNCH + INSTITUTIONAL EDGE”
+# 🧠 ULTIMATE AI STOCK ANALYSIS PROMPT — “PETER LYNCH + INSTITUTIONAL STRATEGY + FUTURE SCENARIOS”
 
 ---
 
 ## 🎯 OBJECTIVE
 
-You are acting as **Head of Equity Research** at a **top-tier sell-side firm** responsible for institutional clients (pension funds, sovereign wealth funds, multi-family offices, hedge funds).  
+Act as the **Head of Equity Research** at a **top-tier sell-side or buy-side investment firm** serving institutional clients.  
+Your mission: produce a **complete, audit-grade, evidence-based equity research report** that applies **Peter Lynch’s 8 investing rules** while integrating quantitative backtesting, valuation modeling, technical trend analysis, and future scenario forecasting.
 
-Produce a **comprehensive, audit-ready, evidence-based stock analysis report** designed to withstand scrutiny by a professional Investment Committee.  
-This report must follow **Peter Lynch’s 8 core investing rules** while applying modern institutional financial analytics, risk controls, and presentation standards.
+The report must be **data-first, defensible, timestamped, and presentation-ready**.
 
-Your output must include:
+Deliver all outputs **in this single response**:
 - Executive summary (≤5 bullets)
-- One-page slide-ready memo
-- Full research report (5–12 pages)
+- One-page memo (slide-ready)
+- Full 5–12 page research report (markdown)
+- Historical performance & trend analysis
 - Quantitative backtests vs. benchmark (1/3/5/10/15 years)
-- Valuation models (DCF + relative + scenario)
-- Quality & consistency scoring
-- Risk and catalyst analysis
-- Position sizing for concentrated and diversified portfolios
+- DCF, peer-relative, and multi-scenario valuation models
+- Quality, risk, and consistency scores
+- Future scenarios (Bear / Base / Bull)
+- Buy/Hold/Sell recommendation with conviction levels
+- Position sizing (concentrated, diversified, institutional)
 - JSON summary
-- CSV of key data inputs
-- PNG charts (total return, rolling alpha, DCF sensitivity, component scores)
-
-All data must be **timestamped (UTC)** and **sourced from primary filings** wherever possible.
-
----
-
-## 📜 GUIDING PRINCIPLES — PETER LYNCH RULES (TO BE EXPLICITLY APPLIED)
-
-1. **Rule 1:** Your edge is what you already know — highlight the investor’s informational edge based on industry familiarity.  
-2. **Rule 2:** Ignore the herd — assess consensus sentiment and identify independent reasoning.  
-3. **Rule 3:** In the long term, stock performance tracks company performance — evaluate the business fundamentals vs. stock price history.  
-4. **Rule 4:** Own only what you can follow — limit focus to a manageable coverage universe; recommend realistic monitoring depth.  
-5. **Rule 5:** Understand finances — inspect solvency, liquidity, leverage, and accounting quality (flag red zones).  
-6. **Rule 6:** Avoid hot stocks in hot industries — prefer solid companies in ignored or steady sectors.  
-7. **Rule 7:** In troubled industries, buy survivors — verify evidence of recovery before any “turnaround” thesis.  
-8. **Rule 8:** Concentrate intelligently — show how 5 big winners can compound massive returns; provide allocation guidance.
+- PNG charts (total return, trend, DCF, score bar)
+- CSV summary of key data
+- Source list + timestamps
 
 ---
 
-## 🧾 DATA REQUIREMENTS
+## 📜 PETER LYNCH INVESTING FRAMEWORK
 
-Request, verify, and timestamp these datasets (or state “Assumed — with justification” if missing):
+Explicitly apply these in a “Lynch Checklist” section with quotes and evidence:
+
+1. **Edge:** Use what you already know; identify investor edge.  
+2. **Contrarian:** Ignore the herd; explain consensus bias.  
+3. **Fundamentals > Stock:** Long-term stock = company performance; compare both.  
+4. **Focus:** Follow only what you can manage; evaluate coverage capacity.  
+5. **Financials:** Never invest without checking solvency; show liquidity, leverage, Z-score.  
+6. **Avoid Hype:** Prefer great firms in dull industries; flag overheated sectors.  
+7. **Recovery:** If the industry is troubled, pick the survivors; show revival indicators.  
+8. **Concentration:** A few big winners drive results; suggest ideal position sizing.
+
+---
+
+## 🧾 REQUIRED DATA INPUTS
+
+Use the latest available data. Timestamp everything (UTC).
 
 **Company Fundamentals**
-- Ticker, exchange, CUSIP, CIK
-- Market cap, float, shares outstanding, current share price (UTC timestamp)
-- Segment & geography revenue breakdown
+- Ticker, Exchange, CUSIP, CIK
+- Current Price, Market Cap, Shares Outstanding
+- Segment & geographic revenue mix
 - 10 years of financial statements (IS, BS, CF)
-- Margins: gross, operating, and net; ROE, ROIC, ROA, FCF margin
-- Debt metrics: total debt, net debt/EBITDA, interest coverage
-- Liquidity: current ratio, quick ratio
-- Shareholder breakdown: insiders %, institutions %, top holders
-- Buybacks/dilution over time
-- Analyst consensus (rating, EPS, target prices)
-- Short interest, borrow rate
+- Growth metrics: Revenue, EBIT, EPS, FCF CAGR (1/3/5/10y)
+- Margins: Gross, Operating, Net, FCF
+- Leverage: Total Debt, Net Debt/EBITDA, Interest Coverage
+- Liquidity: Current & Quick Ratios
+- ROE, ROIC, ROA
+- Insider & institutional ownership, buyback/dilution trends
+- Analyst consensus (EPS forecast, PT, sentiment)
+- Short interest, beta, volatility
 
-**Historical Price & Benchmark Data**
-- Daily adjusted close (price + dividends)
-- Total return vs. benchmark (S&P 500 or regional equivalent)
-- Timeframes: 1y, 3y, 5y, 10y, 15y, and since IPO
+**Historical & Technical**
+- Daily total return data (≥10 years preferred)
+- Benchmark (S&P 500 or relevant)
+- Technical trends: 50/200-day MA, RSI, MACD, volatility %
+- Recent momentum: +1m, +3m, +6m, +1y performance
+- Price channel (support/resistance zones)
+- Relative strength vs benchmark
+- Volume & accumulation trend
 
-**Macro & Industry**
-- Sector growth rates, TAM estimates
-- Regulatory or commodity dependencies
-- Major M&A, litigation, or structural shifts in past 24 months
+**Macro & Sector**
+- Industry growth rate
+- Key macro drivers
+- Commodity, regulatory, or FX exposure
+- Sector performance comparison
 
 ---
 
-## ⚙️ ANALYSIS TASKS
+## ⚙️ ANALYTICAL TASKS
 
-### 1. 🧮 Historical Performance & Statistical Tests
-- Compute total return CAGR vs. benchmark (1/3/5/10/15y & since-IPO)
-- Rolling 12m and 36m active returns distribution
-- CAPM regression (alpha, beta, t-stats)
-- Sharpe, Sortino, Information Ratio, Max Drawdown
-- Bootstrap p-value for alpha significance
-- Hit-rate: % of rolling 3y windows beating benchmark by >2% annualized
+### 1. 📈 Historical Performance
+- Compute total return CAGR (1/3/5/10/15y)
+- Rolling 12m / 36m excess returns
+- CAPM Alpha, Beta, t-stats, Sharpe, Sortino, Max Drawdown
+- Statistical significance (bootstrap p-value)
+- Consistency Index: % of rolling 3y windows beating benchmark >2%/yr
 
-### 2. 💎 Quality & Consistency Scoring (0–100)
-Weighted components:
-| Metric | Weight | Description |
-|--------|---------|-------------|
-| ROIC stability | 8% | Std. deviation of ROIC over 10y |
-| FCF conversion | 7% | FCF/Net Income |
-| Margin stability | 5% | Rolling 5y volatility |
-| Piotroski F-Score | 5% | Accounting quality |
-| Balance sheet strength | 5% | Leverage & liquidity metrics |
-| Management capital allocation | 5% | Reinvestment vs. buyback logic |
+### 2. 📊 Technical Trend & Price Momentum
+- Identify trend (Uptrend / Downtrend / Sideways)
+- Compare 50MA vs 200MA for crossover
+- RSI range (overbought/oversold zones)
+- MACD signal (bullish/bearish divergence)
+- Short-term volatility % vs historical average
+- Recent price action summary (1m, 3m, 6m, 12m return vs index)
 
-### 3. 💰 Valuation Analysis
-**Models Required:**
-- DCF (10-year explicit + terminal via both Gordon & exit multiple)
-- Peer-relative multiples (EV/EBITDA, P/E, P/FCF, PEG)
-- Scenario valuation (Bear/Base/Bull with probabilities)
+### 3. 💎 Quality & Consistency Score (0–100)
+| Factor | Weight | Description |
+|---------|---------|-------------|
+| ROIC Stability | 8% | Standard deviation over 10y |
+| FCF Conversion | 7% | FCF/Net Income |
+| Margin Stability | 5% | Std. dev. of margins |
+| Piotroski F-Score | 5% | Financial strength |
+| Balance Sheet Strength | 5% | Leverage & liquidity |
+| Capital Allocation | 5% | Buybacks, dividends, reinvestment quality |
 
-Include:
-- Full DCF table (year-by-year FCFF, WACC inputs, terminal assumptions)
-- Sensitivity grid: WACC ±1%, terminal growth −1% to +3%
+### 4. 💰 Valuation Models
+Perform:
+- **Discounted Cash Flow (DCF)** (10y explicit + terminal via both Gordon & exit multiple)
+- **Peer-relative multiples** (EV/EBITDA, P/E, PEG, P/FCF)
+- **Scenario Analysis:**
+  - **Bear Case:** pessimistic growth, high WACC, multiple contraction
+  - **Base Case:** realistic consensus growth & normalized margins
+  - **Bull Case:** optimistic revenue growth, margin expansion, re-rating
+  - Output: fair value range with probability weights
 
-### 4. 🧱 Moat & Durability
-Rate and justify across five vectors:
+### 5. 🧠 Moat & Strategic Durability
+Rate each 0–5 (None → Enduring):
 1. Network Effects  
 2. Switching Costs  
-3. Scale Economies  
-4. Brand/IP/Regulatory  
+3. Scale Advantages  
+4. IP/Brand/Regulation  
 5. Cost Leadership  
+→ Aggregate to Moat Rating
 
-→ Output: **Moat Rating = None / Weak / Moderate / Strong / Enduring**
+### 6. ⚠️ Risk Matrix
+Top 10 risks table:
+| Risk | Probability % | NAV Impact % | Description |
+|------|----------------|---------------|--------------|
 
-### 5. ⚠️ Risk Analysis
-List **top 10 risks** with:
-- Probability (%)
-- NAV Impact (%)
-- Mitigation / Monitoring metric
-Use a concise table format.
+### 7. 🚀 Catalysts
+Time-based list of near/mid/long-term drivers:
+| Term | Catalyst | Confidence | Expected Impact |
+|------|-----------|-------------|----------------|
 
-### 6. 🚀 Catalysts
-Time-staged list:
-- Short-term (0–12m)
-- Mid-term (1–3y)
-- Long-term (3y+)
-Include trigger events, expected impact, and confidence level.
+### 8. 📦 Position Sizing
+| Portfolio Type | Recommended Weight | Rationale |
+|----------------|--------------------|------------|
+| 5-Stock Concentrated | X% | Based on conviction and upside |
+| 20-Stock Diversified | X% | Risk-adjusted sizing |
+| Institutional Block | USD size, expected impact, trade horizon |
 
-### 7. 📊 Position Sizing
-Recommend allocations for:
-- Concentrated 5-stock portfolio (% allocation)
-- Diversified 20-stock portfolio (% allocation)
-- Institutional block trade sizing (AUM $100M case, expected market impact)
-
-### 8. 🧾 Governance & ESG
-Rate 1–5:
-- Board independence
-- CEO tenure & comp alignment
-- Accounting transparency
-- ESG red flags (if any)
+### 9. 🧾 Governance & ESG
+Rate (1–5): Board independence, CEO alignment, transparency, ESG controversies.
 
 ---
 
-## 📈 SCORING SYSTEM (0–100)
+## 🔮 FUTURE SCENARIOS & RECOMMENDATION
 
-| Component | Weight |
-|-----------|---------|
+Include this dedicated section:
+
+### 🔭 Scenario Modeling
+| Scenario | Growth Assumption | Valuation Multiple | Fair Value | Upside/Downside % | Probability |
+|-----------|------------------|--------------------|-------------|-------------------|--------------|
+| Bear | Slow growth, margin compression | Low multiple | $X | -Y% | 25% |
+| Base | Consensus trajectory | Market average | $X | +Y% | 50% |
+| Bull | Strong growth, margin expansion | Premium multiple | $X | +Z% | 25% |
+
+### 💡 Final Recommendation
+Provide:
+- **Buy / Hold / Sell** recommendation
+- **Conviction Level** (High / Medium / Low)
+- **12m, 24m, 36m Target Prices**
+- **Expected Returns** and Confidence Intervals
+- **Narrative Summary:** why the stock fits (or doesn’t) a Peter Lynch approach
+- **Position Sizing Guidance:** per portfolio type
+
+---
+
+## 📊 SCORING MODEL (Weights)
+
+| Metric | Weight |
+|--------|---------|
 | Historical Outperformance | 30% |
 | Quality & Consistency | 25% |
 | Valuation Attractiveness | 20% |
 | Moat & Durability | 15% |
 | Governance & Liquidity | 10% |
 
-Compute **Composite Score = Σ(weight × normalized_subscore)**.  
-Also compute a **Consistency Index = % of 3y windows beating benchmark by >2%/yr**.
+Final **Composite Score (0–100)** = weighted sum.  
+Also compute **Confidence Band (High/Med/Low)** and **Trend Direction**.
 
 ---
 
-## 🧩 OUTPUT FORMAT
-
-### 1. EXECUTIVE SUMMARY
-- 3–5 bullets (recommendation, key thesis, key risk)
-- 1-sentence “IB-grade” headline summary
-
-### 2. ONE-PAGE MEMO (Slide-Ready)
-| Section | Content |
-|----------|----------|
-| Recommendation | Rating + target prices (12/24/36m) |
-| Thesis | 3 key drivers of upside |
-| Catalysts | 3 key triggers |
-| Risks | 3 main threats |
-| Valuation Snapshot | Price, P/E fwd, EV/EBITDA, DCF base value |
-| Sizing | Suggested % (5-stock / 20-stock) |
-| Speaker Notes | 3-sentence IC pitch |
-
-### 3. FULL REPORT (5–12 pages)
-Include:
-1. Title Page (Ticker, Date, Price, Market Cap)
-2. Executive Summary
-3. Performance vs Benchmark (Charts)
-4. Financial Summary Tables
-5. Valuation Models (DCF, Relative, Scenario)
-6. Quality & Moat Assessment
-7. Risk, Catalyst, and Governance Sections
-8. Position Sizing & Trade Plan
-9. Peter Lynch Checklist (Rules 1–8)
-10. Appendix: Assumptions, Raw Data, Sources, Provenance
-
-### 4. VISUALS (PNG)
-- Price/Total Return vs. Benchmark
-- Rolling Alpha Histogram
-- DCF Sensitivity Heatmap
-- Component Scores Bar
-
----
-
-## 🧮 KEY FORMULAS (explicitly show in report)
+## 🧮 FORMULAS (show all in report)
 
 - CAGR = (End / Start)^(1/n) − 1  
 - FCF = CFO − CapEx  
 - ROIC = NOPAT / Invested Capital  
-- NOPAT = EBIT × (1 − Tax Rate)  
-- WACC = rf + β × ERP (plus debt weighting)  
-- Altman Z, Piotroski F, Beneish M formulas (state inputs)  
-- Alpha (CAPM): \( r_s − (rf + β(r_m − rf)) \)  
+- WACC = rf + β × ERP + (Debt% × After-tax Cost of Debt)  
+- Alpha = r_stock − [rf + β × (r_market − rf)]  
+- Altman Z, Piotroski F, Beneish M formulas (explicit)
 
 ---
 
@@ -207,55 +197,44 @@ Include:
 
 ```json
 {
-  "ticker": "TICKER",
-  "as_of": "YYYY-MM-DDTHH:MM:SSZ",
-  "price": 0.0,
-  "market_cap": 0.0,
-  "recommendation": "Strong Buy|Buy|Hold|Trim|Sell|Strong Sell",
-  "target_price": {"12m":0.0,"24m":0.0,"36m":0.0},
-  "expected_return":{"12m_pct":0.0,"24m_pct":0.0,"36m_pct":0.0},
-  "probability_distribution":{"bear_pct":0.0,"base_pct":0.0,"bull_pct":0.0},
+  "ticker":"TICKER",
+  "as_of":"YYYY-MM-DDTHH:MM:SSZ",
+  "price":0.0,
+  "market_cap":0.0,
+  "trend_analysis":{
+    "trend":"Uptrend|Downtrend|Sideways",
+    "momentum_1m_pct":0.0,
+    "momentum_3m_pct":0.0,
+    "momentum_6m_pct":0.0,
+    "momentum_12m_pct":0.0,
+    "rsi":0.0,
+    "macd_signal":"Bullish|Bearish|Neutral"
+  },
+  "recommendation":{
+    "rating":"Strong Buy|Buy|Hold|Trim|Sell|Strong Sell",
+    "conviction":"High|Medium|Low",
+    "target_price":{"12m":0.0,"24m":0.0,"36m":0.0},
+    "expected_return":{"12m_pct":0.0,"24m_pct":0.0,"36m_pct":0.0}
+  },
+  "future_scenarios":[
+    {"scenario":"Bear","growth":"Low","fair_value":0.0,"upside_pct":0.0,"probability_pct":25},
+    {"scenario":"Base","growth":"Normal","fair_value":0.0,"upside_pct":0.0,"probability_pct":50},
+    {"scenario":"Bull","growth":"High","fair_value":0.0,"upside_pct":0.0,"probability_pct":25}
+  ],
   "composite_score":0.0,
   "component_scores":{
-    "historical_outperformance":0.0,
+    "outperformance":0.0,
     "quality":0.0,
     "valuation":0.0,
     "moat":0.0,
-    "governance_liquidity":0.0
-  },
-  "key_metrics":{
-    "revenue_cagr_5y":0.0,
-    "roic":0.0,
-    "fcf_margin_ttm":0.0,
-    "net_debt_to_ebitda":0.0,
-    "altman_z":0.0,
-    "piotroski_f":0,
-    "beneish_m":0.0
-  },
-  "backtest":{
-    "periods":{
-      "1y":{"stock_return":0.0,"benchmark_return":0.0,"excess":0.0},
-      "3y":{"stock_return":0.0,"benchmark_return":0.0,"excess":0.0},
-      "5y":{"stock_return":0.0,"benchmark_return":0.0,"excess":0.0},
-      "10y":{"stock_return":0.0,"benchmark_return":0.0,"excess":0.0},
-      "15y":{"stock_return":0.0,"benchmark_return":0.0,"excess":0.0}
-    },
-    "alpha_annualized":0.0,
-    "alpha_p_value":0.0,
-    "beta":0.0,
-    "sharpe":0.0,
-    "sortino":0.0,
-    "max_drawdown":0.0,
-    "hit_rate_3y_windows_pct":0.0
+    "governance":0.0
   },
   "moat_rating":"None|Weak|Moderate|Strong|Enduring",
   "top_risks":[{"risk":"","probability_pct":0.0,"impact_pct_nav":0.0}],
   "position_size":{
-    "concentrated_5":{"percent_portfolio":0.0,"rationale":""},
-    "diversified_20":{"percent_portfolio":0.0,"rationale":""},
-    "institutional_block":{"usd_size":0.0,"market_impact_pct":0.0,"trade_horizon_days":0}
+    "concentrated_5":{"percent_portfolio":0.0},
+    "diversified_20":{"percent_portfolio":0.0},
+    "institutional_block":{"usd_size":0.0,"trade_horizon_days":0}
   },
-  "assumptions":[{"name":"","value":0.0,"label":"Assumed|Sourced","justification":""}],
-  "sources":[{"name":"","url":"","retrieved":"YYYY-MM-DDTHH:MM:SSZ","type":"filing|datafeed|presentation"}],
-  "data_provenance":[{"file":"","notes":""}]
+  "sources":[{"name":"","url":"","retrieved":"YYYY-MM-DDTHH:MM:SSZ"}]
 }
